@@ -28,6 +28,7 @@ body p{
     margin-top: 10px;
     height: 30px;
     width: 245px;
+    border-radius: 4px;
 }
 
 #navbar h2{
@@ -39,7 +40,7 @@ body p{
     list-style: none;
 }
 
-#navbar li{
+li{
     padding-bottom: 10px;
 }
 
@@ -108,7 +109,15 @@ header .links{
 #what-is-trackgenix h3{
     top: 340px;
     left: 75px;
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    border-radius: 5px;
     position: absolute;
+}
+
+#what-is-trackgenix h3 a{
+    color: orangered;
 }
 
 #what-is-trackgenix img{
@@ -149,6 +158,50 @@ header .links{
     top: 60px;
     padding: 10px 0px;
     left: 140px;
+    position: absolute;
+}
+
+#why-trackgenix{
+    padding: 50px;
+    margin-left: 288px;
+    height: 280px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#why-trackgenix h2{
+    top: 50px;
+    left: 110px;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+}
+
+#why-trackgenix ul{
+    top: 100px;
+    left: 135px;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+}
+
+#why-trackgenix h3{
+    top: 250px;
+    left: 110px;
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#why-trackgenix h3 a{
+    color: orangered;
+}
+
+#why-trackgenix img{
+    top: 50px;
+    left: 600px;
     position: absolute;
 }
 
