@@ -1,11 +1,12 @@
 body{
     font-family: Reboto, Poppins, Arial;
+    margin: 0;
 }
 
 #navbar{
     float: left;
     width: 15%;
-    height: 1400px;
+    height: 2737px;
     background-color: #ccc;
     color: #111;
     padding: 20px 12px;
@@ -21,7 +22,41 @@ body{
     list-style: none;
 }
 
-#navbar a{
+a{
     color: #111;
     text-decoration: none;
+}
+
+#header{
+    padding: 15px;
+    padding-bottom: 5px;
+    border-bottom: red solid 3px;
+}
+
+#header .menu{
+    float: left;
+    width: 3%;
+    color: orangered;
+    text-align: center;
+    font-size: 29px;
+    /*border: #111 solid 1px;*/
+}
+
+#header h1{
+    float: center;
+    color: #111;
+    font-size: 20px;
+    padding: 5px;
+    /*border: #111 solid 1px;*/
+}
+
+#header .links{
+    top: 15px;
+    right: 15px;
+    text-align: center;
+    font-size: 25px;
+    text-indent: 5px;
+    position: absolute;
+    padding: 2px 20px;
+    /*border: #111 solid 1px;*/
 }
