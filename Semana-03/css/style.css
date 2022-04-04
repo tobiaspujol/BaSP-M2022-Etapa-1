@@ -1,0 +1,27 @@
+body{
+    font-family: Reboto, Poppins, Arial;
+}
+
+#navbar{
+    float: left;
+    width: 15%;
+    height: 1400px;
+    background-color: #ccc;
+    color: #111;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+#navbar h2{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar a{
+    color: #111;
+    text-decoration: none;
+}
