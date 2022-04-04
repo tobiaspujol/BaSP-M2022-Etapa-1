@@ -2,19 +2,31 @@ body{
     font-family: Reboto, Poppins, Arial;
 }
 
+body h2{
+    font-size: 30px;
+}
+
+body h3{
+    font-size: 25px;
+}
+
+body p{
+    font-size: 20px;
+}
+
 #navbar{
     float: left;
-    width: 15%;
+    width: 288px;
     height: 2737px;
     background-color: #ccc;
     color: #111;
-    padding: 20px 12px;
+    padding: 20px 16px;
     box-sizing: border-box;
 }
 
 #navbar h2{
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 #navbar ul{
@@ -27,106 +39,105 @@ a{
 }
 
 header{
-    padding: 15px;
-    padding-bottom: 5px;
-    border-bottom: red solid 3px;
+    padding: 23px;
+    height: 50px;
+    width: 1440px;
+    border-bottom: red solid 4px;
 }
 
-header .menu{
+header p{
     float: left;
     width: 3%;
     color: orangered;
     text-align: center;
-    font-size: 29px;
-    /*border: #111 solid 1px;*/
+    font-size: 40px;
+    padding: 0px 15px;
 }
 
 header h1{
     float: center;
     color: #111;
-    font-size: 20px;
-    padding: 5px;
-    /*border: #111 solid 1px;*/
+    padding: 4px;
+    font-size: 36px;
 }
 
 header .links{
-    top: 15px;
-    right: 15px;
+    right: 30px;
+    top: 50px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     text-indent: 5px;
     position: absolute;
-    padding: 2px 20px;
-    /*border: #111 solid 1px;*/
 }
 
 #what-is-trackgenix{
-    padding: 30px;
-    margin-left: 200px;
-    height: 200px;
+    padding: 50px;
+    margin-left: 288px;
+    height: 350px;
     margin-bottom: 50px;
     position: relative;
 }
 
 #what-is-trackgenix h2{
-    top: 20px;
-    left: 30px;
-    width: 530px;
+    top: 80px;
+    left: 75px;
+    width: 420px;
     height: 200px;
     position: absolute;
-    /*border: #111 solid 1px;*/
 }
 
 #what-is-trackgenix p{
-    top: 50px;
-    left: 30px;
-    width: 400px;
-    height: 200px;
+    top: 130px;
+    left: 75px;
+    width: 440px;
+    height: 180px;
     position: absolute;
-    /*border: #111 solid 1px;*/
 }
 
 #what-is-trackgenix h3{
-    top: 135px;
-    left: 30px;
-    width: 530px;
-    height: 200px;
+    top: 340px;
+    left: 75px;
     position: absolute;
-    /*border: #111 solid 1px;*/
 }
 
 #what-is-trackgenix img{
     top: 50px;
-    left: 530px;
-    margin-left: 20px;
-    height: 200px;
+    left: 550px;
     position: absolute;
-    /*border: #111 solid 1px;*/
 }
 
 #functionalities{
-    padding: 30px;
-    margin-left: 200px;
+    padding: 50px;
+    margin-left: 288px;
     height: 450px;
 }
 
 .functionalities-item{
     display: inline-block;
-    width: 500px;
-    height: 150px;
+    width: 550px;
+    height: 220px;
     position: relative;
 }
 
-.functionalities-item p{
-    width: 150px;
+.functionalities-item i{
+    font-size: 100px;
     top: 20px;
-    left: 150px;
+    left: 10px;
     position: absolute;
 }
 
 .functionalities-item h3{
-    width: 150px;
-    top: 60px;
-    left: 0px;
+    width: 300px;
+    top: 20px;
+    left: 140px;
     position: absolute;
 }
+
+.functionalities-item p{
+    width: 300px;
+    top: 60px;
+    padding: 10px 0px;
+    left: 140px;
+    position: absolute;
+}
+
