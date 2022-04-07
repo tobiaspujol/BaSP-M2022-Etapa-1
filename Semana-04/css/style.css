@@ -1,0 +1,317 @@
+body{
+    font-family: Reboto, Poppins, Arial;
+}
+
+body h2{
+    font-size: 30px;
+}
+
+body h3{
+    font-size: 25px;
+}
+
+body p{
+    font-size: 20px;
+}
+
+#navbar{
+    float: left;
+    width: 288px;
+    height: 2737px;
+    background-color: #ccc;
+    color: #111;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+#navbar input{
+    margin-top: 10px;
+    height: 30px;
+    width: 245px;
+    border-radius: 4px;
+}
+
+#navbar h2{
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+a{
+    color: #111;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header{
+    padding: 23px;
+    height: 50px;
+    width: 1440px;
+    border-bottom: red solid 4px;
+}
+
+header p{
+    float: left;
+    width: 3%;
+    color: orangered;
+    text-align: center;
+    font-size: 40px;
+    padding: 0px 15px;
+}
+
+header h1{
+    float: center;
+    color: #111;
+    padding: 4px;
+    font-size: 36px;
+}
+
+header .links{
+    right: 30px;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+    position: absolute;
+}
+
+#what-is-trackgenix{
+    padding: 50px 0 70px;
+    margin-left: 288px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-bottom: #ccc solid 1px;
+    position: relative;
+}
+
+#what-is-trackgenix h2{
+    top: 80px;
+    left: 75px;
+    width: 420px;
+    height: 200px;
+    position: absolute;
+}
+
+#what-is-trackgenix p{
+    top: 130px;
+    left: 75px;
+    width: 440px;
+    height: 180px;
+    position: absolute;
+}
+
+#what-is-trackgenix h3{
+    top: 340px;
+    left: 75px;
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#what-is-trackgenix h3 a{
+    color: orangered;
+}
+
+#what-is-trackgenix img{
+    top: 50px;
+    left: 550px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#functionalities{
+    padding: 50px;
+    margin-left: 288px;
+    margin-bottom: 30px;
+    height: 450px;
+    border-bottom: #ccc solid 1px;
+}
+
+.functionalities-item{
+    display: inline-block;
+    width: 550px;
+    height: 220px;
+    position: relative;
+}
+
+.functionalities-item i{
+    font-size: 100px;
+    top: 20px;
+    left: 10px;
+    position: absolute;
+}
+
+.functionalities-item h3{
+    width: 300px;
+    top: 20px;
+    left: 140px;
+    position: absolute;
+}
+
+.functionalities-item p{
+    width: 300px;
+    top: 60px;
+    padding: 10px 0px;
+    left: 140px;
+    position: absolute;
+}
+
+#why-trackgenix{
+    padding: 50px;
+    margin-left: 288px;
+    height: 280px;
+    margin-bottom: 50px;
+    position: relative;
+    border-bottom: #ccc solid 1px;
+}
+
+#why-trackgenix h2{
+    top: 50px;
+    left: 110px;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+}
+
+#why-trackgenix ul{
+    top: 100px;
+    left: 135px;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+}
+
+#why-trackgenix h3{
+    top: 250px;
+    left: 110px;
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#why-trackgenix h3 a{
+    color: orangered;
+}
+
+#why-trackgenix img{
+    top: 50px;
+    left: 600px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#how-can-we-help-you{
+    position: relative;
+    padding-left: 313px;
+    border-bottom: #ccc solid 1px;
+}
+
+.data{
+    display: inline-block;
+    height: 37px;
+    width: 520px;
+    margin: 15px 20px 15px 5px;
+    border-radius: 4px;
+}
+
+#select-area{
+    height: 37px;
+    width: 1078px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+#enter-your-message{
+    height: 100px;
+    width: 1078px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+.buttons{
+    display: inline-block;
+    margin: 0px 20px 50px 5px;
+    border-radius: 5px;
+}
+
+#button1{
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: orangered;
+
+}
+
+#button2{
+    text-align: center;
+    padding: 4px 40px;
+    border: orangered solid 1px;
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+#our-history{
+    padding: 25px 30px 45px 30px;
+    margin: 30px 0 0 288px;
+    height: 250px;
+    border-bottom: #ccc solid 1px;
+    position: relative;
+}
+
+#our-history h2{
+    margin-bottom: 20px;
+}
+
+#our-history p{
+    top: 80px;
+    left: 500px;
+    width: 600px;
+    font-size: 15px;
+    position: absolute;
+}
+
+.ol-lists{
+    display: inline-block;
+    padding: 50px;
+    left: 230px;
+    position: relative;
+}
+
+#three-lists ol{
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+footer{
+    border-top: red solid 4px;
+    width: 1440px;
+}
+
+footer .links{
+    margin: 20px 0px 20px;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+}
+
+footer p{
+    text-align: center;
+}
