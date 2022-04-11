@@ -36,7 +36,7 @@ a{
     text-decoration: none;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
     #sidebar{
         display: block;
         height: 2200px;

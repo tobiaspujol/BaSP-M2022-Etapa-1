@@ -29,7 +29,7 @@ header .links{
     padding-left: 32px;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
     header .links{
         display: block;
     }
