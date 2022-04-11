@@ -1,0 +1,45 @@
+#sidebar{
+    display: none;
+    float: left;
+    width: 288px;
+    height: 100%;
+    background-color: #ccc;
+    color: #111;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sidebar input{
+    margin-top: 10px;
+    height: 30px;
+    width: 245px;
+    border-radius: 4px;
+}
+
+#sidebar p{
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+#sidebar ul{
+    list-style: none;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+a{
+    color: #111;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px){
+    #sidebar{
+        display: block;
+    }
+}

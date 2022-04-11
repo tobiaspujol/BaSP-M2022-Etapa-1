@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    height: 40px;
+    width: 1440px;
+    border-bottom: red solid 4px;
+}
+
+header p{
+    width: 3%;
+    color: orangered;
+    text-align: center;
+    font-size: 30px;
+ }
+
+header h1{
+    color: #111;
+    padding: 5px;
+    font-size: 20px;
+}
+
+header .links{
+    display: none;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+}
+
+@media screen and (min-width:1024px){
+    header .links{
+        display: block;
+    }
+
+    header{
+        margin-left: 288px;
+    }
+}

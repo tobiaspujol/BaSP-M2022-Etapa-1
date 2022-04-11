@@ -1,0 +1,15 @@
+footer{
+    border-top: red solid 4px;
+    width: 1440px;
+}
+
+footer .links{
+    margin: 20px 0px 20px;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+}
+
+footer p{
+    text-align: center;
+}
