@@ -36,42 +36,27 @@ section{
     border-radius: 5px;
 }
 
-/* #functionalities{
-    padding: 50px;
-    margin-bottom: 30px;
-    height: 450px;
+#functionalities{
+    display: flex;
+    flex-direction: column;
     border-bottom: #ccc solid 1px;
 }
 
-.functionalities-item{
-    display: inline-block;
-    width: 550px;
-    height: 220px;
-    position: relative;
+#functionalities-items{
+    display: flex;
+    flex-direction: column;
 }
 
 .functionalities-item i{
-    font-size: 100px;
-    top: 20px;
-    left: 10px;
-    position: absolute;
+    font-size: 60px;
 }
 
 .functionalities-item h3{
     width: 300px;
-    top: 20px;
-    left: 140px;
-    position: absolute;
+    margin-bottom: 20px;
 }
 
-.functionalities-item p{
-    width: 300px;
-    top: 60px;
-    padding: 10px 0px;
-    left: 140px;
-    position: absolute;
-}
-
+/* 
 #why-trackgenix{
     padding: 50px;
     height: 280px;
@@ -207,11 +192,24 @@ section{
 } */
 
 @media screen and (min-width:1024px){
+    main{
+        margin-left: 288px;
+    }
+    
     #what-is-trackgenix{
         flex-direction: row-reverse;
     }
 
-    main{
-        margin-left: 288px;
+    #functionalities-items{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .functionalities-item{
+        width: 45%;
+    }
+
+    .functionalities-item p{
+        width: 90%;
     }
 }

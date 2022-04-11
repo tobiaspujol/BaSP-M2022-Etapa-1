@@ -3,12 +3,12 @@ header{
     flex-direction: row;
     padding-top: 10px;
     height: 40px;
-    width: 1440px;
+    width: 100%;
     border-bottom: red solid 4px;
 }
 
 header p{
-    width: 3%;
+    width: 40px;
     color: orangered;
     text-align: center;
     font-size: 30px;
@@ -16,16 +16,17 @@ header p{
 
 header h1{
     color: #111;
+    width: 43%;
     padding: 5px;
     font-size: 20px;
 }
 
 header .links{
     display: none;
-    top: 50px;
-    text-align: center;
+    top: 30px;
     font-size: 30px;
     text-indent: 5px;
+    padding-left: 32px;
 }
 
 @media screen and (min-width:1024px){
