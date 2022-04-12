@@ -8,4 +8,8 @@ Trackgenix consists of 4 types of roles. These are: Super Admin, Admin, Proyect 
 We worked on HTML code, respecting its semantics and structure exclusively. We didn't care about its esthetic.
 
 ## Week 3
-Now, we made the website look similar to Figma's view, creating CSS code to modify the Website presentation.
+Now, we made the website look similar to Figma's view, creating CSS code to modify the Website presentation. We made focus on Position property.
+
+## Week 4
+We changed CSS week 3's code by the usage of flexbox and separated the CSS style code in different files called header.css, main.css, sidebar.css and footer.css. Also, my GitHub page is: https://tobiaspujol.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
+
