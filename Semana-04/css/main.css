@@ -158,18 +158,15 @@ section{
     margin-bottom: 10px;
 }
 
-/* 
-.ol-lists{
-    display: inline-block;
-    padding: 50px;
-    left: 230px;
-    position: relative;
+
+#three-lists{
+    display: flex;
+    flex-direction: column;
 }
 
-#three-lists ol{
-    padding-top: 15px;
-    padding-left: 25px;
-} */
+.ol-lists{
+    padding: 15px 30px;
+}
 
 @media screen and (min-width:1025px){
     main{
@@ -186,7 +183,7 @@ section{
     }
 
     .functionalities-item{
-        width: 45%;
+        width: 48%;
     }
 
     .functionalities-item p{
@@ -206,5 +203,11 @@ section{
 
     #email{
         margin-left: 10px;
+    }
+
+    #three-lists{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
 }

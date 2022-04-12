@@ -37,8 +37,18 @@ a{
 }
 
 @media screen and (min-width:1025px){
+    #sidebar-main{
+        display: flex;
+        flex-direction: row;
+    }
+
     #sidebar{
         display: block;
-        height: 2200px;
+        flex: 1;
+        height: 2255px;
+    }
+
+    main{
+        flex: 3;
     }
 }
