@@ -6,7 +6,7 @@ header{
     border-bottom: red solid 4px;
 }
 
-header p{
+.p-h1 p{
     display: inline;
     color: orangered;
     font-size: 30px;
