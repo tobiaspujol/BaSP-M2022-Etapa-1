@@ -47,7 +47,7 @@ img{
     text-align: center;
     font-size: 15px;
     font-weight: bold;
-    width: 50%;
+    width: 25%;
     background-color: white;
     color: orangered;
     border: orangered solid 1px;
@@ -100,6 +100,7 @@ img{
     flex-direction: column;
     align-self: flex-start;
     padding: 20px;
+    width: 60%;
 }
 
 #why-info a{
@@ -202,6 +203,40 @@ img{
     padding: 5px 0 0 20px;
 }
 
+@media screen and (min-width:481px){
+    #learn-more{
+        display: block;
+    }
+    .functionalities-item{
+        display: flex;
+        padding: 10px;
+    }
+
+    .functionalities-item i{
+        width: 85px;
+    }
+
+    .h3-p{
+        width: 100%;
+    }
+
+    #name-email{
+        display: flex;
+        flex-direction: row;
+        width: 100.5%;
+    }
+
+    #email{
+        margin-left: 10px;
+    }
+
+    #three-lists{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (min-width:1025px){
     body h2{
         font-size: 30px;
@@ -214,12 +249,9 @@ img{
     body p{
         font-size: 15px;
     }
+
     #what-is-trackgenix{
         flex-direction: row-reverse;
-    }
-
-    #learn-more{
-        display: block;
     }
 
     #functionalities-items{
@@ -228,17 +260,7 @@ img{
     }
 
     .functionalities-item{
-        display: flex;
         width: 45%;
-        padding: 10px;
-    }
-
-    .functionalities-item i{
-        width: 20%;
-    }
-
-    .h3-p{
-        width: 80%;
     }
 
     #why-trackgenix{
@@ -250,19 +272,7 @@ img{
         font-size: 20px;
     }
 
-    #name-email{
-        display: flex;
+    #our-history{
         flex-direction: row;
-        width: 100.3%;
-    }
-
-    #email{
-        margin-left: 10px;
-    }
-
-    #three-lists{
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
     }
 }
