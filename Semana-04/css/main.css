@@ -21,15 +21,17 @@ section{
     flex-direction: column;
 }
 
-#what-is-trackgenix h3{
+#learn-more{
     display: none;
     text-align: center;
+    font-weight: bold;
+    width: 50%;
+    background-color: white;
+    color: orangered;
     border: orangered solid 1px;
     border-radius: 5px;
-}
-
-#what-is-trackgenix h3 a{
-    color: orangered;
+    padding: 5px 0;
+    margin: 10px 0;
 }
 
 #what-is-trackgenix img{
@@ -55,7 +57,7 @@ section{
 
 .functionalities-item h3{
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #why-trackgenix{
@@ -82,15 +84,16 @@ section{
     padding-bottom: 10px;
 }
 
-#why-trackgenix h3{
+#more{
     text-align: center;
-    padding: 4px 20px;
+    font-weight: bold;
+    width: 50%;
+    background-color: white;
+    color: orangered;
     border: orangered solid 1px;
     border-radius: 5px;
-}
-
-#why-trackgenix h3 a{
-    color: orangered;
+    padding: 5px 0;
+    margin: 10px 0;
 }
 
 #how-can-we-help-you{
@@ -169,12 +172,12 @@ section{
 }
 
 @media screen and (min-width:1025px){
-    main{
-        margin-left: 288px;
-    }
-    
     #what-is-trackgenix{
         flex-direction: row-reverse;
+    }
+
+    #learn-more{
+        display: block;
     }
 
     #functionalities-items{
@@ -183,11 +186,17 @@ section{
     }
 
     .functionalities-item{
-        width: 48%;
+        display: flex;
+        width: 45%;
+        padding: 10px;
     }
 
-    .functionalities-item p{
-        width: 90%;
+    .functionalities-item i{
+        width: 20%;
+    }
+
+    .h3-p{
+        width: 80%;
     }
 
     #why-trackgenix{
@@ -208,6 +217,6 @@ section{
     #three-lists{
         flex-direction: row;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
