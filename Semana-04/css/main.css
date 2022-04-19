@@ -301,5 +301,23 @@ section{
 
     #our-history{
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 20px;
+    }
+
+    #our-history h2{
+        order: -1;
+        width: 100%;
+    }
+
+    #our-history img{
+        flex-grow: 1;
+        flex-basis: 300px;
+        width: 300px;
+    }
+
+    #our-history-info{
+        flex-grow: 1;
+        flex-basis: 300px;
     }
 }
