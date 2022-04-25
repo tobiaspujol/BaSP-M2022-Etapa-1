@@ -24,10 +24,6 @@ window.onload = function() {
     }
     
     function validatePasswordB() {
-        if (loginPassword.value.length < 8) {
-            passwordInlineAlert.textContent = "* Password is not valid.";
-            loginPassword.insertAdjacentElement('afterend', passwordInlineAlert);
-        }
         var numbers = [0,1,2,3,4,5,6,7,8,9];
         var num = 0;
         var char = 0;
@@ -41,7 +37,7 @@ window.onload = function() {
         if (loginPassword.value.length != num) {
             char = 1;
         }
-        if ((num == 0) || (char == 0)) {
+        if ((numm == 0) || (char == 0) || (signUpPassword.value.length < 8)) {
             passwordInlineAlert.textContent = "* Password is not valid.";
             loginPassword.insertAdjacentElement('afterend', passwordInlineAlert);
         } else {
