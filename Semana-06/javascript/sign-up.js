@@ -7,7 +7,7 @@ window.onload = function() {
         var num = 0;
         for (i=0; i < val.value.length; i++) {
             for (j=0; j < 10; j++) {
-                if (val.value[i] == numbers[j]) {
+                if ((val.value[i] == numbers[j]) && (val.value[i] != ' ')) {
                     num++;
                 }
             }
@@ -29,6 +29,7 @@ window.onload = function() {
     signUpSurname.addEventListener('focus', validateSurnameF);
 
     function validateNameB() {
+        var numm = 0;
         var numm = containsNumber(signUpName);
         if ((numm > 0) || (signUpName.value.length < 3)) {
             nameInlineAlert.textContent = "* Name is not valid.";
@@ -42,6 +43,7 @@ window.onload = function() {
     }
 
     function validateSurnameB() {
+        var numm = 0;
         var numm = containsNumber(signUpSurname);
         if ((numm > 0) || (signUpSurname.value.length < 3)) {
             surnameInlineAlert.textContent = "* Surname is not valid.";
@@ -73,6 +75,7 @@ window.onload = function() {
     signUpZip.addEventListener('focus', validateZipF);
 
     function validateDniB() {
+        var numm = 0;
         var numm = containsNumber(signUpDni);
         if ((numm != signUpDni.value.length) || (signUpDni.value.length < 7)) {
             dniInlineAlert.textContent = "* DNI is not valid.";
@@ -86,6 +89,7 @@ window.onload = function() {
     }
 
     function validatePhoneB() {
+        var numm = 0;
         var numm = containsNumber(signUpPhone);
         if ((signUpPhone.value.length != numm) || (signUpPhone.value.length != 10)) {
             phoneInlineAlert.textContent = "* Phone is not valid.";
@@ -99,6 +103,7 @@ window.onload = function() {
     }
 
     function validateZipB() {
+        var numm = 0;
         var numm = containsNumber(signUpZip);
         if ((signUpZip.value.length != numm) || (signUpZip.value.length < 4) || (signUpZip.value.length > 5)) {
             zipInlineAlert.textContent = "* ZIP code is not valid.";
@@ -109,6 +114,86 @@ window.onload = function() {
     }
     function validateZipF() {
         zipInlineAlert.remove();
+    }
+
+    // Date of birth valid.
+
+    var signUpDob = document.getElementById('dob');
+    var dobInlineAlert = document.createElement('p');
+    dobInlineAlert.textContent = "";
+    signUpDob.addEventListener('blur', validateDobB);
+    signUpDob.addEventListener('focus', validateDobF);
+
+    function validateDobB() {
+        if ((containsNumber(signUpDob) != 8) || (signUpDob.value[2] != '/') || (signUpDob.value[5] != '/') ||
+        (Number(signUpDob.value[0]+signUpDob.value[1]) > 31) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 12)
+        || (Number(signUpDob.value[6]+signUpDob.value[7]+signUpDob.value[8]+signUpDob.value[9]) > 2004)){
+            dobInlineAlert.textContent = "* Date of birth is not valid.";
+            signUpDob.insertAdjacentElement('afterend', dobInlineAlert);
+        } else {
+            dobInlineAlert.textContent = "";
+        }
+    }
+    function validateDobF() {
+        dobInlineAlert.remove();
+    }
+
+    // Address and city valids.
+
+    var signUpAddress = document.getElementById('address');
+    var signUpCity = document.getElementById('city');
+    var addressInlineAlert = document.createElement('p');
+    var cityInlineAlert = document.createElement('p');
+    addressInlineAlert.textContent = "";
+    cityInlineAlert.textContent = "";
+    signUpAddress.addEventListener('blur', validateAddressB);
+    signUpAddress.addEventListener('focus', validateAddressF);
+    signUpCity.addEventListener('blur', validateCityB);
+    signUpCity.addEventListener('focus', validateCityF);
+
+    function containsSpace(val) {
+        var space = 0;
+        for (i=0; i < 10; i++) {
+            if (val.value[i] == ' ') {
+                space++;
+            }
+        }
+        return space;
+    }
+
+    function validateAddressB() {
+        var numm = 0;
+        var numm = containsNumber(signUpAddress);
+        var char = 0;
+        var spacee = 0;
+        spacee = containsSpace(signUpAddress);
+        if (signUpAddress.value.length != numm) {
+            char = 1;
+        }
+        if ((numm == 0) || (char == 0) || (signUpAddress.value.length < 5) || (spacee == 0)) {
+            addressInlineAlert.textContent = "* Address is not valid.";
+            signUpAddress.insertAdjacentElement('afterend', addressInlineAlert);
+        } else {
+            addressInlineAlert.textContent = "";
+        }
+    }
+    function validateAddressF() {
+        addressInlineAlert.remove();
+    }
+    
+    function validateCityB() {
+        var numm = 0;
+        var numm = containsNumber(signUpCity);
+        var char = signUpCity.value.length - numm;
+        if (char < 3) {
+            cityInlineAlert.textContent = "* City is not valid.";
+            signUpCity.insertAdjacentElement('afterend', cityInlineAlert);
+        } else {
+            cityInlineAlert.textContent = "";
+        }
+    }
+    function validateCityF() {
+        cityInlineAlert.remove();
     }
 
     // Email, password and Repeat password valids.
@@ -144,6 +229,7 @@ window.onload = function() {
     
     function validatePasswordB() {
         var char = 0;
+        var numm = 0;
         var numm = containsNumber(signUpPassword);
         if (signUpPassword.value.length != numm) {
             char = 1;
