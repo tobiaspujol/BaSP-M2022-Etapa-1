@@ -47,15 +47,19 @@
                 <h2>Sign In</h2>
                 <form>
                     <div id="email-password">
-                        <input type="email" placeholder="Email" id="email">
-                        <input type="password" placeholder="Password" id="password">
+                        <input type="email" placeholder="Email" id="email" class="inputs">
+                        <input type="password" placeholder="Password" id="password" class="inputs">
                     </div>
-                    <input type="checkbox" name="remember-me">
-                    <p>
-                        Remember Me
-                    </p>
-                    <a href="#">Forgot password?</a>
-                    <button id="continue-btn">Continue</button>
+                    <div class="remember-forgot">
+                        <div id="checkbox">
+                            <input type="checkbox" name="remember-me">
+                            <label>Remember Me</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="container-btn">
+                        <button id="continue-btn">Continue</button>
+                    </div>
                 </form>
             </div>
         </main>

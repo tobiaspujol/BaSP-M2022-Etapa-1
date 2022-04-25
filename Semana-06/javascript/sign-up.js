@@ -127,7 +127,7 @@ window.onload = function() {
     function validateDobB() {
         if ((containsNumber(signUpDob) != 8) || (signUpDob.value[2] != '/') || (signUpDob.value[5] != '/') ||
         (Number(signUpDob.value[0]+signUpDob.value[1]) > 31) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 12)
-        || (Number(signUpDob.value[6]+signUpDob.value[7]+signUpDob.value[8]+signUpDob.value[9]) > 2004)){
+        || (Number(signUpDob.value[6]+signUpDob.value[7]+signUpDob.value[8]+signUpDob.value[9]) > 2004)) {
             dobInlineAlert.textContent = "* Date of birth is not valid.";
             signUpDob.insertAdjacentElement('afterend', dobInlineAlert);
         } else {
@@ -261,11 +261,20 @@ window.onload = function() {
     continueBtn.addEventListener('click', btn);
 
     function btn() {
-        if ((signUpEmail.value.length != 0) && (signUpPassword.value.length != 0) &&
-            (emailInlineAlert.textContent == "") && (passwordInlineAlert.textContent == "") &&
-            (signUpPassword.value == signUpRepPassword.value)) {
+        if ((signUpCity.value.length != 0) && (cityInlineAlert.textContent == "") && (signUpAddress.value.length != 0) 
+        && (addressInlineAlert.textContent == "") && (signUpDob.value.length != 0) && 
+        (dobInlineAlert.textContent == "") && (signUpZip.value.length != 0) && (zipInlineAlert.textContent == "") 
+        && (signUpPhone.value.length != 0) && (phoneInlineAlert.textContent == "") && (signUpDni.value.length != 0) 
+        && (dniInlineAlert.textContent == "") && (signUpSurname.value.length != 0) && 
+        (surnameInlineAlert.textContent == "") && (signUpName.value.length != 0) && 
+        (nameInlineAlert.textContent == "") && (signUpEmail.value.length != 0) && (signUpPassword.value.length != 0) 
+        && (emailInlineAlert.textContent == "") && (passwordInlineAlert.textContent == "") && 
+        (signUpPassword.value == signUpRepPassword.value)) {
             alert('Login successfull');
-            alert('Email: '+signUpEmail.value+'  Password: '+signUpPassword.value);
+            alert('Complete name: '+signUpName.value+' '+signUpSurname.value+'   DNI: '+signUpDni.value+
+            '   Date of birth: '+signUpDob.value+'   Phone number: '+signUpPhone.value+'   Address: '+
+            signUpAddress.value+'   City: '+signUpCity.value+'   ZIP code: '+signUpZip.value+'   Email: '+
+            signUpEmail.value+'  Password: '+signUpPassword.value);
         } else {
             alert('Incorrect login');
         }
