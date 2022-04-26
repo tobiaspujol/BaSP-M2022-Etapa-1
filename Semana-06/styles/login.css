@@ -14,6 +14,13 @@ form p{
     color: red;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -58,4 +65,24 @@ form p{
     color: orangered;
     border: orangered solid 1px;
     border-radius: 5px;
+}
+
+@media screen and (min-width:481px){
+    .remember-forgot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    #email-password {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .container-error {
+        display: flex;
+        flex-direction: column;
+    }
 }

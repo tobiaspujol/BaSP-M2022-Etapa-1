@@ -37,7 +37,7 @@ window.onload = function() {
         if (loginPassword.value.length != num) {
             char = 1;
         }
-        if ((numm == 0) || (char == 0) || (signUpPassword.value.length < 8)) {
+        if ((num == 0) || (char == 0) || (signUpPassword.value.length < 8)) {
             passwordInlineAlert.textContent = "* Password is not valid.";
             loginPassword.insertAdjacentElement('afterend', passwordInlineAlert);
         } else {
