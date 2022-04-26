@@ -17,7 +17,7 @@ form p{
 form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     align-items: center;
 }
 
@@ -33,6 +33,7 @@ form {
 .inputs {
     padding: 8px;
     margin: 8px 0 4px;
+    width: 150px;
     border: #ccc;
     border-bottom: solid 3px orangered;
 }
@@ -71,18 +72,28 @@ form {
     .remember-forgot {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80%;
     }
 
     #email-password {
         display: flex;
         justify-content: space-around;
-        width: 80%;
+        width: 100%;
     }
 
     .container-error {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .remember-forgot {
+        justify-content: space-around;
+    }
+
+    .inputs {
+        width: 220px;
     }
 }

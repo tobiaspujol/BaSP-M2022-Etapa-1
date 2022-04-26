@@ -15,3 +15,6 @@ We changed CSS week 3's code by the usage of flexbox and separated the CSS style
 
 ## Week 5
 This week we have been assigned 2 tasks. The first one is to complete some js exercises using different variables and functions. The second one consists of the last weeks's problematic correction. The GitHub page is: https://tobiaspujol.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
+
+## Week 6
+We complemented the Week 4's landing page by adding the sign-up and login pages, with all the validations required to complete all fields. Also, we made the website interactive by the response to clicks by the user. The GitHub page is: https://tobiaspujol.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
