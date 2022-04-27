@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/footer.css">
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../javascript/contact.js"></script>
     </head>
     <body>
         <header>
@@ -120,15 +121,15 @@
                     <h2>How can we help you?</h2>
                     <form>
                         <div id="name-email">
-                            <input type="text" placeholder="Name" class="data">
+                            <input type="text" placeholder="Name" class="data" id="name">
                             <input type="text" placeholder="Email" class="data" id="email">
                         </div>
                         <div class="dropdown">
                             <button class="dropbtn">Select area</button>
                             <div class="dropdown-content">
-                              <a href="#">Area 1</a>
-                              <a href="#">Area 2</a>
-                              <a href="#">Area 3</a>
+                              <a id="human-r">Human Resources</a>
+                              <a id="systems">Systems</a>
+                              <a id="commer">Commercialization</a>
                             </div>
                         </div>
                         <input type="text" placeholder="Enter your Message" class="data" id="enter-your-message">
