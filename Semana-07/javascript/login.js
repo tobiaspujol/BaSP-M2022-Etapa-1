@@ -63,17 +63,19 @@ window.onload = function() {
     function btn() {
         if (validateEmailB() && validatePasswordB()) {
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?'+urlString(loginEmail.value,loginPassword.value))
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (responseJson) {
-                console.log(responseJson.success);
-                alert('Login successfull');
-                alert('Email: '+loginEmail.value+'  Password: '+loginPassword.value);
-            })
-            .catch(function(error) {
-                console.log(error);
-                alert('Incorrect login');
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (responseJson) {
+                    if (responseJson.success == true) {
+                        alert('Login successfull');
+                        alert('Email: '+loginEmail.value+'  Password: '+loginPassword.value);
+                    } else {
+                        alert('Incorrect login');
+                    }
+                })
+                .catch(function(error) {
+                    console.log(error);
             });
         } else {
             alert('Incorrect login');
