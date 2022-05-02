@@ -281,7 +281,7 @@ window.onload = function() {
 
     // LocalStorage check.
 
-    if (localStorage.getItem("name").length > 0) {
+    if (localStorage.getItem("name") != null) {
         signUpName.value = localStorage.getItem("name");
         signUpSurname.value = localStorage.getItem("lastname");
         signUpDni.value = localStorage.getItem("dni");
@@ -316,8 +316,8 @@ window.onload = function() {
                 .then(function (response) {
                     return response.json();
                 })
-                .then(function () {
-                    alert('Login successfull');
+                .then(function (responseJson) {
+                    alert(responseJson.msg);
                     alert('Complete name: '+signUpName.value+' '+signUpSurname.value+'   DNI: '+signUpDni.value+
                     '   Date of birth: '+signUpDob.value+'   Phone number: '+signUpPhone.value+'   Address: '+
                     signUpAddress.value+'   City: '+signUpCity.value+'   ZIP code: '+signUpZip.value+'   Email: '+
