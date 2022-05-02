@@ -72,6 +72,7 @@ window.onload = function() {
                     alert(responseJson.msg);
                     if (responseJson.success == true) {
                         alert('Email: '+loginEmail.value+'  Password: '+loginPassword.value);
+                        window.location.replace("../views/index.html");
                     } else {
                         alert('Incorrect login');
                     }

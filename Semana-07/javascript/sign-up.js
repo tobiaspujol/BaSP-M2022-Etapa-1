@@ -41,7 +41,7 @@ window.onload = function() {
         }
     }
     function validateNameF() {
-        nameInlineAlert.remove();
+        nameInlineAlert.textContent = "";
     }
 
     function validateSurnameB() {
@@ -267,8 +267,8 @@ window.onload = function() {
 
     function validateRepPasswordB() {
         if (signUpPassword.value != signUpRepPassword.value) {
-            repPasswordInlineAlert.textContent = "* Password must be the same.";
-            signUpPassword.insertAdjacentElement('afterend', repPasswordInlineAlert);
+            repPasswordInlineAlert.textContent = "* Repeat the password";
+            signUpRepPassword.insertAdjacentElement('afterend', repPasswordInlineAlert);
             return false;
         } else {
             repPasswordInlineAlert.textContent = "";
@@ -332,6 +332,7 @@ window.onload = function() {
                     localStorage.setItem("zip", signUpZip.value);
                     localStorage.setItem("email", signUpEmail.value);
                     localStorage.setItem("password", signUpPassword.value);
+                    window.location.replace("../views/login.html");
                 })
                 .catch(function(error) {
                     console.log(error);
