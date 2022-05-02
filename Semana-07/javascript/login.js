@@ -52,6 +52,8 @@ window.onload = function() {
         passwordInlineAlert.remove();
     }
 
+    // Button valid.
+
     var continueBtn = document.getElementById('continue-btn');
     continueBtn.addEventListener('click', btn);
 
@@ -62,7 +64,8 @@ window.onload = function() {
 
     function btn() {
         if (validateEmailB() && validatePasswordB()) {
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?'+urlString(loginEmail.value,loginPassword.value))
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?'+
+            urlString(loginEmail.value,loginPassword.value))
                 .then(function (response) {
                     return response.json();
                 })
